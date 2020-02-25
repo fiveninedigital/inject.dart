@@ -103,7 +103,7 @@ class BuilderLogger {
     // <TRANSITIONAL_API>
     ElementDeclarationResult elementDeclaration;
     if (element.kind != ElementKind.DYNAMIC) {
-      var parsedLibrary = ParsedLibraryResultImpl.tmp(element.library);
+      var parsedLibrary = AnalysisSession.getParsedLibraryByElement(element.library);
       if (parsedLibrary.state == ResultState.VALID) {
         elementDeclaration = parsedLibrary.getElementDeclaration(element);
       }
