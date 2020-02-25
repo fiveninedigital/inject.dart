@@ -8,6 +8,7 @@
 
 import 'dart:async';
 import 'package:analyzer/dart/analysis/results.dart';
+import 'package:analyzer/dart/analysis/session.dart';
 
 // <TRANSITIONAL_API>
 import 'package:analyzer/src/dart/analysis/results.dart';
